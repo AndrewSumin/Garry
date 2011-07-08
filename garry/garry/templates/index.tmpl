@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Webpage</title>
+		<link type="text/css" rel="stylesheet" href="{{config.static_host}}/markup/pages/style.css"/>
+    </head>
+    <body>
+        <ul>
+        {% for vacancy in search.vacancies %}
+            <li><a href="{{ vacancy.links.alternate.href }}">{{ vacancy.name }}</a></li>
+        {% endfor %}
+        </ul>
+		<hr/>
+        <ul>
+        {% for vacancy in employer %}
+            <li><a href="{{ vacancy.links.alternate.href }}">{{ vacancy.name }}</a></li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
