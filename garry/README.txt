@@ -33,7 +33,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL
 gpgcheck=1
 
 Обновляем питон:
-sudo yum install python26.i386 python26-devel.i386
+sudo yum install python26.i386 python26-devel.i386 gcc.x86_64
 
 Делаем питон 2.6 питоном по умолчанию:
 sudo rm /usr/bin/python
