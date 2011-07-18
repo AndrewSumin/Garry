@@ -67,14 +67,14 @@ sudo python setup.py install
 Делаем симлинк на новую библиотеку (если нужно):
 ln -s /usr/local/lib/libcurl.so.4 /usr/lib/
 
+Ставим setup tools
+sudo yum install python26-setuptools
+
 Ставим tornado-util (https://github.com/hhru/tornado-util):
 git clone https://github.com/hhru/tornado-util.git
 cd tornado-util
 python setup.py build
 sudo python setup.py install
-
-Ставим setup tools
-sudo yum install python26-setuptools
 
 Ставим tornado (https://github.com/hhru/tornado):
 git clone https://github.com/hhru/tornado.git
