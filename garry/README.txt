@@ -73,6 +73,9 @@ cd tornado-util
 python setup.py build
 sudo python setup.py install
 
+Ставим setup tools
+sudo yum install python26-setuptools
+
 Ставим tornado (https://github.com/hhru/tornado):
 git clone https://github.com/hhru/tornado.git
 cd tornado
